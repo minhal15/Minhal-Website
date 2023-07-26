@@ -59,7 +59,7 @@ const Data = () => {
             </h1>
         </div>
         <h3 className="home__subtitle">A FullStack Developer</h3>
-        <p className="home__description">4th year Computer Science student at Toronto Metropolitan University and a FullStack Developer based in Toronto. 
+        <p className="home__description">I am a 4th year Computer Science student at Toronto Metropolitan University and a FullStack Developer based in Toronto. 
         </p>
 
         <div className="home__icons">
