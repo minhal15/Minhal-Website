@@ -36,9 +36,15 @@ const Projects = () => {
                         <i onClick={() => toggleTab(0)} className='uil uil-times
                         projects__modal-close'></i>
 
-                        <h3 className="projects__modal-title">
+                        <div className="projects__modal-title">
+                            <a href="https://github.com/hmscps714/Hospital-Management-System" rel="noreferrer" className='home__social-icon' target="_blank">
+                                <i className="bx bxl-github"></i>
+                            </a>
                             Medsuite (Hospital Management System)
-                        </h3>
+                            <a href="https://medsuite.netlify.app/" rel="noreferrer" className='home__social-icon' target="_blank">
+                                <i className="bx bx-link"></i>
+                            </a>
+                        </div>
 
                         <div>
                             <img src={MedsuiteImage} alt="Medsuite Icon" className="projects__image-inner" />
@@ -102,9 +108,15 @@ const Projects = () => {
                         className='uil uil-times
                         projects__modal-close'></i>
 
-                        <h3 className="projects__modal-title">
+                        <div className="projects__modal-title">
+                            <a href="https://github.com/minhal15/Face-detector" rel="noreferrer" className='home__social-icon' target="_blank">
+                                <i className="bx bxl-github"></i>
+                            </a>
                             Face Detection App
-                        </h3>
+                            <a href="https://medsuite.netlify.app/" rel="noreferrer" className='home__social-icon' target="_blank">
+                                <i className="bx bx-link"></i>
+                            </a>
+                        </div>
 
                         <div>
                             <img src={FaceImage} alt="Medsuite Icon" className="projects__image-inner" />
@@ -157,9 +169,12 @@ const Projects = () => {
                         <i onClick={() => toggleTab(0)} className='uil uil-times
                         projects__modal-close'></i>
 
-                        <h3 className="projects__modal-title">
+                        <div className="projects__modal-title">
+                            <a href="https://github.com/minhal15/youtube-scrpaer-selenium" rel="noreferrer" className='home__social-icon' target="_blank">
+                                <i className="bx bxl-github"></i>
+                            </a>
                             Top 10 Trending Videos Scraper
-                        </h3>
+                        </div>
 
                         <div>
                             <img src={ScraperImage} alt="Medsuite Icon" className="projects__image-inner" />
