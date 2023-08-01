@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import MedsuiteImage from "../../assets/Medsuite.png"
 import FaceImage from "../../assets/face.png"
 import ScraperImage from "../../assets/scraper.png"
+import Rnative from "../../assets/Rnative.png"
+import Website from "../../assets/Website.png"
 import './projects.css'
 
 const Projects = () => {
@@ -209,6 +211,108 @@ const Projects = () => {
                     </div>
                 </div>
             </div>
+
+            <div className="projects__content">
+                <div>
+                    <img src={Rnative} alt="Medsuite Icon" className="projects__image" />
+                    <h3 className="projects__title">
+                        App Security
+                    </h3>
+                </div>
+
+                <span onClick={() => toggleTab(4)}
+                    className="projects__button">
+                        View
+                <i className='uil uil-arrow-right
+                projects__button-icon'></i></span>
+
+                <div className={toggleState === 4 ? "projects__modal active-modal" : "projects__modal"}>
+                    <div className="projects__modal-content">
+                        <i onClick={() => toggleTab(0)} className='uil uil-times
+                        projects__modal-close'></i>
+
+                        <div className="projects__modal-title">
+                           
+                        Enhancing App Security with React Native for a Transit Company
+                            
+                        </div>
+
+                        <div>
+                            {/* <img src={MedsuiteImage} alt="Medsuite Icon" className="projects__image-inner" /> */}
+                        </div>
+
+                        <ul className="projects__modal-projects grid">
+                            <li className="projects__modal-project">
+                                {/* <i className='uil uil-check-circle projects__modal-icon'></i> */}
+                                <p className="projects__modal-info">
+                                    Key Achievements:<br />
+                                    - Conducted in-depth security analysis and reverse engineering of the transit companies app.<br />
+                                    - Discovered a critical bug that enabled unlimited ticket creation and unauthorized bus boarding.<br />
+                                    - Employed ethical practices to responsibly disclose the security flaw to the company.<br /><br />
+                                </p>
+                            </li>
+
+                            <li className="projects__modal-project">
+                                {/* <i className='uil uil-check-circle projects__modal-icon'></i> */}
+                                <p className="projects__modal-info">
+                                    Approach<br />
+                                    - Cloned the app to showcase how the vulnerability was bypassed without compromising user data.<br />
+                                    - Demonstrated the significance of robust security measures in mobile app development.<br />
+                                    - Respected the company's privacy by not disclosing their name or any sensitive information.<br />
+                                    - More information will be available once bug is fixed.<br />
+                                </p>
+                            </li>
+
+                            
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div className="projects__content">
+                <div>
+                    <img src={Website} alt="Medsuite Icon" className="projects__image" />
+                    <h3 className="projects__title">
+                        Personal Website
+                    </h3>
+                </div>
+
+                <span className="projects__button" onClick={() => 
+                    toggleTab(5)}>View
+                <i className='uil uil-arrow-right
+                projects__button-icon'></i></span>
+
+                <div className={toggleState === 5 ? "projects__modal active-modal" : "projects__modal"}>
+                    <div className="projects__modal-content">
+                        <i onClick={() => toggleTab(0)} className='uil uil-times
+                        projects__modal-close'></i>
+
+                        <div className="projects__modal-title">
+                            <a href="https://github.com/minhal15/Minhal-Website" rel="noreferrer" className='home__social-icon' target="_blank">
+                                <i className="bx bxl-github"></i>
+                            </a>
+                            Personal Portfolio Website
+                        </div>
+
+                        <div>
+                            <img src={Website} alt="Medsuite Icon" className="projects__image-inner" />
+                        </div>
+
+                        <ul className="projects__modal-projects grid">
+                            <li className="projects__modal-project">
+                                <i className='uil uil-check-circle
+                                projects__modal-icon'></i>
+                                <p className="projects__modal-info">
+                                    Not much to explain, just React and CSS! Click github link to see code
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
     </section>
   )
