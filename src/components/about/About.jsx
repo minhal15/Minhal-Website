@@ -18,9 +18,11 @@ const About = () => {
                 {/* <Info /> */}
 
                 <p className="about__description">
-                A 4th year Computer Science student at Toronto Metropolitan University. 
-                I love working with front-end stuff, and am most familiar with Javascript's React framework. 
-                I have also worked with backend using Node/Express and Firebase for my projects, and having some exposure to SQL during a school project.
+                Hello there! I'm thrilled to welcome you to my corner of the web. I'm a passionate 4th-year Computer Science student at Toronto Metropolitan University, and I'm passionate about web development, with a strong focus on JavaScript's React framework. 
+                <br></br><br />
+                Additionally, I've delved into backend development using Node/Express and PostgreSQL. Recently, I've been exploring the world of app development with React Native. <br></br><br />
+                When I'm not coding, I'm outdoors playing soccer, volleyball, and cricket, staying active and fit. 
+                I'm always seeking new challenges to grow both personally and professionally. Join me on this exciting journey as we shape a world of boundless possibilities through technology!
                 </p>
 
                 <a download="" href={CV} className="button 

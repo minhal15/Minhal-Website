@@ -1,24 +1,25 @@
 .about__container {
-    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    grid-template-columns: 1fr 1.5fr; /* Adjust the column ratio as needed */
     align-items: center;
-    column-gap: 4rem;
+    column-gap: 3rem; /* Adjust the gap between the image and description */
 }
 
 .about__img {
-    width: 350px;
+    max-width: 100%; /* Ensure the image doesn't exceed its original width */
     border-radius: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.about__description {
+    padding: 10;
+    margin-bottom: 2rem;
 }
 
 .about__info {
     grid-template-columns: repeat(3, 140px);
     gap: 0.5rem;
     margin-bottom: var(--mb-1);
-}
-
-
-.about__description {
-    padding: 0 4rem 0 0;
-    margin-bottom: var(--mb-3);
 }
 
 
