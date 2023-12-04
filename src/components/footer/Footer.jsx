@@ -11,7 +11,7 @@ const Footer = () => {
             <li>
                 <div className="footer__email">
                 <h3 className="footer__text">Email me for Anything at: </h3>
-                <a href="mailto:m15hassa@torontomu.ca" className='footer__link'>m15hassa@torontomu.ca</a>
+                <a href="mailto:m15hassa@torontomu.ca" className='footer__link'>m15hassan@torontomu.ca</a>
                 </div>
             </li>
             </ul>
