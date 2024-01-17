@@ -4,6 +4,7 @@ import FaceImage from "../../assets/face.png"
 import ScraperImage from "../../assets/scraper.png"
 import Rnative from "../../assets/Rnative.png"
 import Website from "../../assets/Website.png"
+import MNS from "../../assets/mns.png"
 import './projects.css'
 
 const Projects = () => {
@@ -155,39 +156,36 @@ const Projects = () => {
 
             <div className="projects__content">
                 <div>
-                    <img src={ScraperImage} alt="Medsuite Icon" className="projects__image" />
+                    <img src={MNS} alt="Medsuite Icon" className="projects__image" />
                     <h3 className="projects__title">
-                        YouTube Scraper
+                        Ecommerce Website
                     </h3>
                 </div>
 
                 <span className="projects__button" onClick={() => 
-                    toggleTab(3)}>View
+                    toggleTab(6)}>View
                 <i className='uil uil-arrow-right
                 projects__button-icon'></i></span>
 
-                <div className={toggleState === 3 ? "projects__modal active-modal" : "projects__modal"}>
+                <div className={toggleState === 6 ? "projects__modal active-modal" : "projects__modal"}>
                     <div className="projects__modal-content">
                         <i onClick={() => toggleTab(0)} className='uil uil-times
                         projects__modal-close'></i>
 
                         <div className="projects__modal-title">
-                            <a href="https://github.com/minhal15/youtube-scrpaer-selenium" rel="noreferrer" className='home__social-icon' target="_blank">
-                                <i className="bx bxl-github"></i>
-                            </a>
-                            Top 10 Trending Videos Scraper
+                            MNS Electronix, Founder and Web Developer
                         </div>
 
                         <div>
-                            <img src={ScraperImage} alt="Medsuite Icon" className="projects__image-inner" />
+                            <img src={MNS} alt="Medsuite Icon" className="projects__image-inner" />
                         </div>
 
                         <ul className="projects__modal-projects grid">
-                            <li className="projects__modal-project">
+                        <li className="projects__modal-project">
                                 <i className='uil uil-check-circle
                                 projects__modal-icon'></i>
                                 <p className="projects__modal-info">
-                                    Developed a Selenium data scraper to fetch top 10 trending videos from the YouTube trending page.
+                                Designed and developed a responsive e-commerce website using WordPress, Themify, and WooCommerce.
                                 </p>
                             </li>
 
@@ -195,7 +193,7 @@ const Projects = () => {
                                 <i className='uil uil-check-circle
                                 projects__modal-icon'></i>
                                 <p className="projects__modal-info">
-                                    Utilized Python’s pandas library to store data into a CSV file.
+                                Integrated essential plugins such as Mailchimp, Themify Builder, and Stripe for seamless functionality.
                                 </p>
                             </li>
 
@@ -203,8 +201,7 @@ const Projects = () => {
                                 <i className='uil uil-check-circle
                                 projects__modal-icon'></i>
                                 <p className="projects__modal-info">
-                                    Hosted the scraper model using AWS lambda’s server-less technology to automate emailing scraped data to the user
-                                    every 24 hours.
+                                Utilized WordPress block tools to enhance the website’s layout and design.
                                 </p>
                             </li>
                         </ul>
@@ -272,6 +269,66 @@ const Projects = () => {
 
             <div className="projects__content">
                 <div>
+                    <img src={ScraperImage} alt="Medsuite Icon" className="projects__image" />
+                    <h3 className="projects__title">
+                        YouTube Scraper
+                    </h3>
+                </div>
+
+                <span className="projects__button" onClick={() => 
+                    toggleTab(3)}>View
+                <i className='uil uil-arrow-right
+                projects__button-icon'></i></span>
+
+                <div className={toggleState === 3 ? "projects__modal active-modal" : "projects__modal"}>
+                    <div className="projects__modal-content">
+                        <i onClick={() => toggleTab(0)} className='uil uil-times
+                        projects__modal-close'></i>
+
+                        <div className="projects__modal-title">
+                            <a href="https://github.com/minhal15/youtube-scrpaer-selenium" rel="noreferrer" className='home__social-icon' target="_blank">
+                                <i className="bx bxl-github"></i>
+                            </a>
+                            Top 10 Trending Videos Scraper
+                        </div>
+
+                        <div>
+                            <img src={ScraperImage} alt="Medsuite Icon" className="projects__image-inner" />
+                        </div>
+
+                        <ul className="projects__modal-projects grid">
+                            <li className="projects__modal-project">
+                                <i className='uil uil-check-circle
+                                projects__modal-icon'></i>
+                                <p className="projects__modal-info">
+                                    Developed a Selenium data scraper to fetch top 10 trending videos from the YouTube trending page.
+                                </p>
+                            </li>
+
+                            <li className="projects__modal-project">
+                                <i className='uil uil-check-circle
+                                projects__modal-icon'></i>
+                                <p className="projects__modal-info">
+                                    Utilized Python’s pandas library to store data into a CSV file.
+                                </p>
+                            </li>
+
+                            <li className="projects__modal-project">
+                                <i className='uil uil-check-circle
+                                projects__modal-icon'></i>
+                                <p className="projects__modal-info">
+                                    Hosted the scraper model using AWS lambda’s server-less technology to automate emailing scraped data to the user
+                                    every 24 hours.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+            <div className="projects__content">
+                <div>
                     <img src={Website} alt="Medsuite Icon" className="projects__image" />
                     <h3 className="projects__title">
                         Personal Website
@@ -311,6 +368,8 @@ const Projects = () => {
                     </div>
                 </div>
             </div>
+
+
 
 
         </div>
